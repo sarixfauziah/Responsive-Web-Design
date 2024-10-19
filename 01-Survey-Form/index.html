@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="styles.css">
+<div id="div-page">
+    <body>
+        <div id="div-body">
+            <script>// #1</script>
+            <h1 id="title">Vet Appointment Form</h1>
+            <script>// #2</script>
+            <p id="description">
+                Please request for your vet appointment by filling the form below.
+            </p>
+            <script>// #3</script>
+            <form id="survey-form" method="post" onsumbit="return false;">
+                <div class="form">
+                    <script>// #4, #10, #11</script>
+                    <label class="form-label" id="name-label" for="name">Name</label>
+                    <input class="form-input" type="text" id="name" placeholder="Nanuk" required />
+                </div>
+                <div class="form">
+                    <script>// #5, #6, #10, #11</script>
+                    <label class="form-label" id="email-label" for="email">E-Mail</label>
+                    <input class="form-input" type="email" id="email" placeholder="email@domain.com" required />
+                </div>
+                <div class="form">
+                    <script>// #7, #8, #9, #10, #11</script>
+                    <label class="form-label" id="number-label" for="number">Age (Years)</label>
+                    <input class="form-input" type="number" id="number" min="0.1" max="60" placeholder="10" required />
+                </div>
+                <div class="form">
+                    <script>// #12</script>
+                    <label class="form-label" for="species">Species</label><br>
+                    <select class="form-input" id="dropdown" placeholder="Cat" list="dropdown" required>
+                        <option value="Cat">Cat</option>
+                        <option value="Dog">Dog</option>
+                        <option value="Rabbit">Rabbit</option>
+                        <option value="Mouse">Mouse</option>
+                        <option value="Bird">Bird</option>
+                        <option value="Reptile">Reptile</option>
+                    </select>
+                </div><br>
+                <div class="form">
+                    <label class="form-label" id="label-gender" for="gender">Gender</label>
+                    <div class="form-radio-group">
+                        <div class="form-control-group">
+                            <input class="form-control-radio" type="radio" name="gender" id="gender-female" value="female" />
+                            <label for="gender-female">Female</label>
+                        </div>
+                        <div class="form-control-group">
+                            <input class="form-control-radio" type="radio" name="gender" id="gender-male" value="male" />
+                            <label for="gender-male">Male</label>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form">
+                    <label class="form-label" for="treatments">Treatments</label>
+                    <div class="form-checkbox-group">
+                        <div class="form-control-group">
+                            <input class="form-control-checkbox" type="checkbox" name="treatment" id="treatment-deworm" value="Deworming" />
+                            <label for="stack-angular">Deworming</label>
+                        </div>
+                        <div class="form-control-group">
+                            <input class="form-control-checkbox" type="checkbox" name="treatment" id="treatment-check-up" value="Check-Up" />
+                            <label for="stack-react">Check-Up</label>
+                        </div>
+                        <div class="form-control-group">
+                            <input class="form-control-checkbox" type="checkbox" name="treatment" id="treatment-vaccination" value="Vaccination" />
+                            <label for="stack-vue">Vaccination</label>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form form-group-textarea">
+                    <textarea name="comments" id="comments" class="form-control-textarea" placeholder="Additional comments, e.g. Gabapentin before the appointment."></textarea>
+                </div><br>
+                <div class="form-group form-group-submit">
+                    <button class="form-submit" id="submit">Submit Appointment Request</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            const projectName = 'survey-form';
+        </script>
+    </body>
+</div>
